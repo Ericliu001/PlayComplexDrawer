@@ -12,12 +12,14 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 
 public class NaviDrawerActivity extends FragmentActivity implements OnItemClickListener {
 	
 	private DrawerLayout mDrawerLayout;
+	private LinearLayout mDrawerListLayout;
 	private ListView drawerList;
 	
 	private ActionBarDrawerToggle mDrawerToggle;
@@ -29,6 +31,7 @@ public class NaviDrawerActivity extends FragmentActivity implements OnItemClickL
         setContentView(R.layout.activity_navi_drawer);
         
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mDrawerListLayout = (LinearLayout) findViewById(R.id.drawerListLayout);
         drawerList = (ListView) findViewById(R.id.drawer_list);
         drawerList.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         drawerList.setItemChecked(0, true);
@@ -71,8 +74,9 @@ public class NaviDrawerActivity extends FragmentActivity implements OnItemClickL
     public boolean onPrepareOptionsMenu(Menu menu) {
     	// TODO Auto-generated method stub
     	
-    	boolean isDrawerOpen = mDrawerLayout.isDrawerOpen(Gravity.START);
+    	boolean isDrawerOpen = mDrawerLayout.isDrawerOpen(mDrawerListLayout);
     	menu.findItem(R.id.action_settings).setVisible(! isDrawerOpen);
+    	menu.findItem(R.id.action_create).setVisible(! isDrawerOpen);
     	return super.onPrepareOptionsMenu(menu);
     }
     

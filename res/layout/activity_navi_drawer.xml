@@ -10,12 +10,14 @@
 
 
     <LinearLayout
+        android:id="@+id/drawerListLayout"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:orientation="vertical" >
 
         <LinearLayout
+            
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:orientation="vertical"
