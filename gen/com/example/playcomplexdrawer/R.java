@@ -31,16 +31,20 @@ public final class R {
         public static final int tklogo=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f090004;
-        public static final int content_frame=0x7f090001;
-        public static final int drawer_layout=0x7f090000;
-        public static final int drawer_list=0x7f090003;
-        public static final int imageView1=0x7f090002;
+        public static final int action_settings=0x7f090006;
+        public static final int content_frame=0x7f090002;
+        public static final int drawer_layout=0x7f090001;
+        public static final int drawer_list=0x7f090004;
+        public static final int imageView1=0x7f090003;
+        public static final int pager=0x7f090000;
+        public static final int tvMain=0x7f090005;
     }
     public static final class layout {
         public static final int activity_action_tab=0x7f030000;
         public static final int activity_home=0x7f030001;
         public static final int activity_navi_drawer=0x7f030002;
+        public static final int drawer_row=0x7f030003;
+        public static final int fragment_tab=0x7f030004;
     }
     public static final class menu {
         public static final int action_tab=0x7f080000;
@@ -83,5 +87,11 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;
+        /**  the theme applied to the application or activity 
+         */
+        public static final int CustomActionBarTheme=0x7f070002;
+        /**  ActionBar styles 
+         */
+        public static final int MyActionBar=0x7f070003;
     }
 }
