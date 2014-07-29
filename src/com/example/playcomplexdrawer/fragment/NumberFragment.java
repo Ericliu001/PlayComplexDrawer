@@ -1,16 +1,16 @@
 package com.example.playcomplexdrawer.fragment;
 
-import com.example.playcomplexdrawer.R;
-
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class NumberFragment extends Fragment {
+import com.example.playcomplexdrawer.R;
+import com.example.playcomplexdrawer.activity.base.TabFragment;
+
+public class NumberFragment extends TabFragment {
 	
 	public static final String POSITION = null;
 
@@ -38,6 +38,13 @@ public class NumberFragment extends Fragment {
 		tvMain.setText("Position: "+ position);
 		
 		return rootView;
+	}
+
+
+	@Override
+	public String getTitle() {
+		// TODO Auto-generated method stub
+		return  (getArguments().getInt(POSITION)) +  "日";
 	}
 
 }
