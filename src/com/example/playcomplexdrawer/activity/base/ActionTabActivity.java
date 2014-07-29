@@ -44,7 +44,7 @@ public abstract class ActionTabActivity extends FragmentActivity implements TabL
 		final ActionBar actionBar = getActionBar();
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 		for (int i = 0; i < numPages; i++) {
-			actionBar.addTab(actionBar.newTab().setText("Tab " + i)
+			actionBar.addTab(actionBar.newTab().setText( i + "号")
 					.setTabListener(this));
 
 		}

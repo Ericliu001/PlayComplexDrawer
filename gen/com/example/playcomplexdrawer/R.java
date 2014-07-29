@@ -56,14 +56,15 @@ public final class R {
         public static final int spinner_ab_focused_myactionbarstyle=0x7f02001c;
         public static final int spinner_ab_pressed_myactionbarstyle=0x7f02001d;
         public static final int spinner_background_ab_myactionbarstyle=0x7f02001e;
-        public static final int tab_indicator_ab_myactionbarstyle=0x7f02001f;
-        public static final int tab_selected_focused_myactionbarstyle=0x7f020020;
-        public static final int tab_selected_myactionbarstyle=0x7f020021;
-        public static final int tab_selected_pressed_myactionbarstyle=0x7f020022;
-        public static final int tab_unselected_focused_myactionbarstyle=0x7f020023;
-        public static final int tab_unselected_myactionbarstyle=0x7f020024;
-        public static final int tab_unselected_pressed_myactionbarstyle=0x7f020025;
-        public static final int tklogo=0x7f020026;
+        public static final int tab_background_select=0x7f02001f;
+        public static final int tab_indicator_ab_myactionbarstyle=0x7f020020;
+        public static final int tab_selected_focused_myactionbarstyle=0x7f020021;
+        public static final int tab_selected_myactionbarstyle=0x7f020022;
+        public static final int tab_selected_pressed_myactionbarstyle=0x7f020023;
+        public static final int tab_unselected_focused_myactionbarstyle=0x7f020024;
+        public static final int tab_unselected_myactionbarstyle=0x7f020025;
+        public static final int tab_unselected_pressed_myactionbarstyle=0x7f020026;
+        public static final int tklogo=0x7f020027;
     }
     public static final class id {
         public static final int action_create=0x7f090011;
@@ -145,7 +146,7 @@ public final class R {
         public static final int DropDownNav_Myactionbarstyle=0x7f070008;
         public static final int PopupMenu_Myactionbarstyle=0x7f070005;
         public static final int ProgressBar_Myactionbarstyle=0x7f070009;
-        public static final int Theme_Myactionbarstyle=0x7f070002;
+        public static final int Theme_MyActionbarStyle=0x7f070002;
         /**  this style is only referenced in a Light.DarkActionBar based theme 
          */
         public static final int Theme_Myactionbarstyle_Widget=0x7f07000b;
