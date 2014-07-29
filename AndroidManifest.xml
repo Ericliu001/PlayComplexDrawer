@@ -12,11 +12,10 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/CustomActionBarTheme"
-        android:uiOptions="splitActionBarWhenNarrow"
-         >
+        android:theme="@style/Theme.Myactionbarstyle"
+        android:uiOptions="splitActionBarWhenNarrow" >
         <activity
-            android:name=".HomeActivity"
+            android:name="com.example.playcomplexdrawer.activity.HomeActivity"
             android:label="@string/title_activity_home" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,12 +24,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NaviDrawerActivity"
+            android:name="com.example.playcomplexdrawer.activity.NaviDrawerActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".ActionTabActivity"
+           android:name="com.example.playcomplexdrawer.activity.base.ActionTabActivity"
             android:label="@string/title_activity_action_tab" >
+        </activity>
+        <activity
+            android:name="com.example.playcomplexdrawer.activity.PlayTabActivity"
+            android:label="@string/title_activity_play_tab" >
         </activity>
     </application>
 

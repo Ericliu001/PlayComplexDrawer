@@ -8,5 +8,6 @@
     <string name="drawer_close">Close</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_activity_action_tab">ActionTabActivity</string>
+    <string name="title_activity_play_tab">PlayTabActivity</string>
 
 </resources>
