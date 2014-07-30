@@ -31,6 +31,7 @@ public class HomeActivity extends NaviDrawerActivity  {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
+		
 		ViewGroup layout = (ViewGroup) findViewById(R.id.content_frame);
 
 

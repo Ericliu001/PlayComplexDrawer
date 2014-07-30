@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
 import com.example.playcomplexdrawer.activity.base.ActionTabActivity;
-import com.example.playcomplexdrawer.activity.base.TabFragment;
 import com.example.playcomplexdrawer.fragment.NumberFragment;
+import com.example.playcomplexdrawer.fragment.base.TabFragment;
 
 public class PlayTabActivity extends ActionTabActivity {
 
@@ -35,6 +35,20 @@ public class PlayTabActivity extends ActionTabActivity {
 		fragList.add(NumberFragment.newInstance(12));
 		
 		return fragList;
+	}
+
+
+	@Override
+	public String getActionbarTitle() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public String getActionbarSubTitle() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 

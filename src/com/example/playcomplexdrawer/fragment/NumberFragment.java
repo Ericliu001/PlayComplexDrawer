@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.playcomplexdrawer.R;
-import com.example.playcomplexdrawer.activity.base.TabFragment;
+import com.example.playcomplexdrawer.fragment.base.TabFragment;
 
 public class NumberFragment extends TabFragment {
 	
@@ -42,7 +42,7 @@ public class NumberFragment extends TabFragment {
 
 
 	@Override
-	public String getTitle() {
+	public String getTabTitle() {
 		// TODO Auto-generated method stub
 		return  (getArguments().getInt(POSITION)) +  "日";
 	}
