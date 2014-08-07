@@ -7,7 +7,7 @@ import android.support.v4.app.Fragment;
 
 import com.example.playcomplexdrawer.activity.base.ActionTabActivity;
 import com.example.playcomplexdrawer.fragment.NumberFragment;
-import com.example.playcomplexdrawer.fragment.base.TabFragment;
+import com.example.playcomplexdrawer.fragment.base.TabListFragment;
 
 public class PlayTabActivity extends ActionTabActivity {
 
@@ -19,8 +19,8 @@ public class PlayTabActivity extends ActionTabActivity {
 
 
 	@Override
-	public ArrayList<TabFragment> getFragmentList() {
-		ArrayList<TabFragment> fragList = new ArrayList<TabFragment>();
+	public ArrayList<TabListFragment> getFragmentList() {
+		ArrayList<TabListFragment> fragList = new ArrayList<TabListFragment>();
 		fragList.add(NumberFragment.newInstance(1));
 		fragList.add(NumberFragment.newInstance(2));
 		fragList.add(NumberFragment.newInstance(3));

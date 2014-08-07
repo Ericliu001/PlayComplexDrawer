@@ -3,7 +3,7 @@
     <string-array name="navi_drawer_list">
         
         <item>Mercury</item>
-        <item>Venus</item>
+        <item>Tab and Fragments</item>
         <item>Earth</item>
         <item>Mars</item>
         <item>Jupiter</item>

@@ -15,14 +15,15 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 
 import com.example.playcomplexdrawer.R;
-import com.example.playcomplexdrawer.fragment.base.TabFragment;
+import com.example.playcomplexdrawer.fragment.base.TabListFragment;
 
 public abstract class ActionTabActivity extends ActionbarBaseActivity implements TabListener {
 	private int numPages = 0;
 	private ViewPager mPager;
-	private ArrayList<TabFragment> fragmentList;
+	private ArrayList<TabListFragment> fragmentList;
 	
-	protected abstract ArrayList<TabFragment> getFragmentList();
+	
+	protected abstract ArrayList<TabListFragment> getFragmentList();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +46,7 @@ public abstract class ActionTabActivity extends ActionbarBaseActivity implements
 		final ActionBar actionBar = getActionBar();
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 		for (int i = 0; i < numPages; i++) {
-			actionBar.addTab(actionBar.newTab().setText( fragmentList.get(i).getTabTitle())
+			actionBar.addTab(actionBar.newTab().setText( fragmentList.get(i).getTabTitle()).setCustomView(fragmentList.get(i).getTabView())
 					.setTabListener(this));
 
 		}
